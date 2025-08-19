@@ -1,16 +1,11 @@
 package com.example.productlisttestapp.repository
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import com.example.productlisttestapp.apiutils.ApiClient
-import com.example.productlisttestapp.apiutils.ApiInterface
 import com.example.productlisttestapp.db.UserDao
 import com.example.productlisttestapp.db.UserEntity
 import com.example.productlisttestapp.model.LoginRequest
 import com.example.productlisttestapp.model.LoginResponse
-import com.example.productlisttestapp.model.User
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.map
 
 class UserRepository(private val userDao: UserDao) {
     val api = ApiClient.getApiInterface()
@@ -36,13 +31,13 @@ class UserRepository(private val userDao: UserDao) {
     }
 
     fun searchUsers(query: String): LiveData<List<UserEntity>> {
-        Log.e("query", query)
+        //  Log.e("query", query)
         return userDao.search("%$query%")
     }
 
     suspend fun login(email: String, password: String): LoginResponse? {
-        Log.e("email", email)
-        Log.e("password", password)
+        // Log.e("email", email)
+        //  Log.e("password", password)
         return api?.login(LoginRequest(email, password))
     }
 }

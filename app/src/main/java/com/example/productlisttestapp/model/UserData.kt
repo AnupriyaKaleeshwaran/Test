@@ -2,7 +2,7 @@ package com.example.productlisttestapp.model
 
 import com.google.gson.annotations.SerializedName
 
-data class UserDto(
+data class UserData(
     val id: Int,
     val email: String,
     @SerializedName("first_name") val firstName: String,

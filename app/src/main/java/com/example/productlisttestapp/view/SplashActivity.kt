@@ -23,7 +23,7 @@ class SplashActivity : AppCompatActivity() {
         Handler().postDelayed({
             binding.loadingSpinner.visibility = ProgressBar.GONE
             navigate()
-        }, 3000) // 3 seconds delay
+        }, 2500)
     }
 
     private fun navigate() {

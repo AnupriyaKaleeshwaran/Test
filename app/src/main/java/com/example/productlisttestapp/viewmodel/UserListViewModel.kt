@@ -1,11 +1,9 @@
 package com.example.productlisttestapp.viewmodel
 
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.productlisttestapp.db.UserEntity
-import com.example.productlisttestapp.model.User
 import com.example.productlisttestapp.repository.UserRepository
 import kotlinx.coroutines.launch
 

@@ -1,3 +1,3 @@
 package com.example.productlisttestapp.model
 
-data class UserListResponse(val data: List<UserDto>)
+data class UserListResponse(val data: List<UserData>)

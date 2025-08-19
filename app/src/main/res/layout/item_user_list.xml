@@ -34,6 +34,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="User Name"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:textSize="16sp"/>
 
@@ -43,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:text="email@example.com"
                 android:textSize="14sp"
-                android:textColor="@android:color/darker_gray"/>
+                android:textColor="@color/gray"/>
         </LinearLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>
