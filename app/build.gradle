@@ -2,7 +2,6 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
 
-    id 'kotlin-kapt'
 
 }
 
@@ -59,7 +58,7 @@ dependencies {
     /* implementation 'com.github.bumptech.glide:glide:4.12.0'
      annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'*/
 
-    implementation 'com.github.bumptech.glide:glide:4.13.0' // or the latest version
+    implementation 'com.github.bumptech.glide:glide:4.13.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'
 
     //Network Library
@@ -67,11 +66,15 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     implementation 'com.google.code.gson:gson:2.8.9'
     implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3'  // Make sure you have the latest version
+
+    implementation "com.google.android.material:material:1.6.0"
+    implementation "androidx.viewpager2:viewpager2:1.0.0" 
 
     //Room
     implementation "androidx.room:room-runtime:2.6.1"
     annotationProcessor "androidx.room:room-compiler:2.6.1"
-    kapt "androidx.room:room-compiler:2.6.1"
+
     implementation "androidx.room:room-ktx:2.6.1"
     //Coil
     implementation("io.coil-kt:coil:2.2.2")

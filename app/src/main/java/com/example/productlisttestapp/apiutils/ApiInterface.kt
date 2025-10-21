@@ -1,20 +1,14 @@
 package com.example.productlisttestapp.apiutils
 
-import com.example.productlisttestapp.model.LoginRequest
-import com.example.productlisttestapp.model.LoginResponse
-import com.example.productlisttestapp.model.UserListResponse
+import com.example.productlisttestapp.model.ApiResponse
+import okhttp3.RequestBody
 
-import retrofit2.Call
-import retrofit2.http.Body
-import retrofit2.http.GET
-import retrofit2.http.POST
-import retrofit2.http.Query
+import retrofit2.Response
+import retrofit2.http.*
 
 interface ApiInterface {
 
-    @POST("api/login")
-    suspend fun login(@Body body: LoginRequest): LoginResponse
-
-    @GET("api/users")
-    suspend fun getUsers(@Query("page") page: Int = 1): UserListResponse
+    @POST("getOrderByTableId")
+    @Headers("Content-Type: text/plain")
+    suspend fun getOrderByTableId(@Body body: RequestBody): Response<ApiResponse>
 }

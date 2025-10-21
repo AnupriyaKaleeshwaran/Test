@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="3dp"
+    android:layout_margin="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="2dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvPersonName"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text="Person Name"/>
+
+        <TextView
+            android:id="@+id/txtAmount"
+            android:layout_width="100dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="0.00"/>
+        <Button
+            android:id="@+id/btnPay"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="Pay"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_primary"
+            android:fontFamily="sans-serif-medium" />
+    </LinearLayout>
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:background="@color/gray100">
+
+   </View>
+
+</LinearLayout>
